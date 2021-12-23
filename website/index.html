@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Hello Welcome To Labi's Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">LABY</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="file:///C:/Users/HP/Videos/stars.jpg" id="stars">
+        <img src="file:///C:/Users/HP/Music/moon.jpg" id="moon">
+        <h2 id="text">Welcome</h2>
+        <a href="#" id="neon-button">Explore</a>
+        <img src="file:///C:/Users/HP/Videos/mountains_front.jpg" id="mountains_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Labi's Website</h2>
+        <p>Hello this is a new website from Labi.<br><br>This website is going to get better by the time<br><br> Follow My Instagram <li><a href="https://www.instagram.com/laabi_m/" id="btn">Labi's IG.</a><br><br> Play my game here <li><a href="http://shootermaffia.c1.biz/" id="btn">ShooterMaffia.</a><br><br> Play The DirtBike Here <li><a href="http://dirtbike.c1.biz/" id="btn">DirtBike Game.</a><</li> <a</p>
+    </div>+
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountains_front = document.getElementById('mountains_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            text.style.marginRight = value * 4 + 'px'
+            text.style.marginTop = value * 1.5 + 'px'
+            header.style.top = value * 0.5 + 'px'
+
+        })
+    </script>
+</body>
+</html> 
